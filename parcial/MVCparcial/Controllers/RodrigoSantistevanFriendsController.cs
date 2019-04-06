@@ -46,7 +46,7 @@ namespace MVCparcial.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "FriendID,Name,Nickname,Birthdate,Friend,Status")] RodrigoSantistevanFriend rodrigoSantistevanFriend)
+        public ActionResult Create([Bind(Include = "FriendID,Nombre,Nickname,Birthdate,Friend,Status")] RodrigoSantistevanFriend rodrigoSantistevanFriend)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace MVCparcial.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "FriendID,Name,Nickname,Birthdate,Friend,Status")] RodrigoSantistevanFriend rodrigoSantistevanFriend)
+        public ActionResult Edit([Bind(Include = "FriendID,Nombre,Nickname,Birthdate,Friend,Status")] RodrigoSantistevanFriend rodrigoSantistevanFriend)
         {
             if (ModelState.IsValid)
             {
